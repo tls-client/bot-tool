@@ -1,7 +1,7 @@
 body {
-  background-color: #121212;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
+  background-color: #000000; /* 完全な黒 */
+  color: #ffffff; /* 白文字 */
+  font-family: "Roboto", Arial, sans-serif; /* モダンフォント */
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
@@ -14,46 +14,79 @@ h1 {
 }
 
 label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   margin-bottom: 5px;
   display: block;
+  color: #ccc; /* 灰色のラベル */
 }
 
 input, textarea, button {
   width: 100%;
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #333;
-  border-radius: 5px;
-  background-color: #1e1e1e;
+  border-radius: 4px;
+  background-color: #121212; /* 暗い背景 */
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.95rem;
   box-sizing: border-box;
 }
 
 input:focus, textarea:focus, button:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #00bcd4; /* アクアブルーのフォーカス */
+}
+
+textarea {
+  resize: none;
 }
 
 button {
-  background-color: #007bff;
+  background-color: #00bcd4; /* アクアブルー */
   color: #ffffff;
   border: none;
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #0097a7; /* 少し暗いブルー */
 }
 
 .checkbox-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .checkbox-group label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   display: block;
-  margin-bottom:
+  margin-bottom: 8px;
+  color: #bbb; /* ラベルを薄い灰色に */
+}
+
+#status {
+  font-size: 0.9rem;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 4px;
+  text-align: center;
+  color: #00ff00; /* 成功時の緑色 */
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  input, textarea, button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
