@@ -1,37 +1,59 @@
 body {
-  background-color: #1e1e1e;
+  background-color: #121212;
   color: #ffffff;
   font-family: Arial, sans-serif;
+  margin: 0;
   padding: 20px;
+  box-sizing: border-box;
 }
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
 input, textarea, button {
   width: 100%;
-  margin: 10px 0;
+  margin-bottom: 15px;
   padding: 10px;
-  border: none;
+  border: 1px solid #333;
   border-radius: 5px;
-  font-size: 16px;
-}
-input, textarea {
-  background-color: #2e2e2e;
+  background-color: #1e1e1e;
   color: #ffffff;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
+
+input:focus, textarea:focus, button:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
 button {
   background-color: #007bff;
   color: #ffffff;
+  border: none;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
 }
+
 button:hover {
   background-color: #0056b3;
 }
+
 .checkbox-group {
-  margin: 10px 0;
+  margin-bottom: 15px;
 }
+
 .checkbox-group label {
+  font-size: 0.9rem;
   display: block;
-}
-#status {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #333333;
-}
+  margin-bottom:
