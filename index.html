@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Bot 操作</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Discord Bot 操作</h1>
+  <label for="botToken">Bot Token:</label>
+  <textarea id="botToken" placeholder="Botトークンを入力"></textarea>
+
+  <label for="serverId">サーバーID:</label>
+  <input type="text" id="serverId" placeholder="サーバーIDを入力">
+
+  <label for="channelId">チャンネルID:</label>
+  <textarea id="channelId" placeholder="チャンネルIDを入力 (改行で複数行)"></textarea>
+
+  <label for="message">メッセージ送信内容:</label>
+  <textarea id="message" placeholder="送信するメッセージを入力"></textarea>
+
+  <label for="delay">遅延 (秒):</label>
+  <input type="number" id="delay" value="0.1" step="0.1">
+
+  <div class="checkbox-group">
+    <label><input type="checkbox" id="sendToAllChannels"> サーバー内の全チャンネルにメッセージを送信</label>
+    <label><input type="checkbox" id="randomMention"> ランダムにメンション</label>
+    <label><input type="checkbox" id="rateLimitBypass"> レートリミット回避</label>
+    <label><input type="checkbox" id="addRandomSuffix"> メッセージの語尾にランダム文字列を追加</label>
+  </div>
+
+  <button onclick="execute()">実行</button>
+  <button onclick="stop()">停止</button>
+
+  <div id="status">ステータス: 未実行</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
